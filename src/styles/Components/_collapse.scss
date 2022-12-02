@@ -6,10 +6,10 @@
   width: 100%;
   .collapse__container {
     border-radius: 20px;
-    width: 98%;
+    width: 90%;
     .collapse__map {
       color: $color-primary;
-      padding: 15px;
+      padding: 5px;
       .collapse__content {
         display: flex;
         align-items: center;
@@ -48,7 +48,7 @@
     margin-bottom: 60%;
     .collapse__container {
       position: relative;
-      top: 50px;
+      top: 30px;
       width: 95%;
       .collapse__map {
         .collapse__content {
