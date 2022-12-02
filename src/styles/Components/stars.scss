@@ -1,0 +1,56 @@
+.stars__container {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  bottom: 155px;
+  left: 6%;
+  .fa-star-red {
+    color: $color-primary;
+  }
+  .fa-star-grey {
+    color: #e3e3e3;
+  }
+}
+
+//Large smartphone
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .stars__container {
+    display: flex;
+    justify-content: flex-end;
+    bottom: 200px;
+    left: 3%;
+    font-size: 1.25rem;
+  }
+}
+
+//Tablette
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .stars__container {
+    width: 10%;
+    bottom: 270px;
+    left: 75%;
+  }
+  .fa-star-red {
+    font-size: 1.563rem;
+  }
+  .fa-star-grey {
+    font-size: 1.563rem;
+  }
+}
+
+//Desktop
+@media screen and (min-width: 1024px) {
+  .stars__container {
+    position: relative;
+    bottom: 405px;
+    width: 10%;
+    left: 82%;
+  }
+  .fa-star-red {
+    font-size: 1.563rem;
+  }
+  .fa-star-grey {
+    font-size: 1.563rem;
+  }
+}
