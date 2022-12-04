@@ -19,7 +19,7 @@ const Sliders = () => {
 
   const previous = () => {
     setMyJsonPictures(
-      myJsonPictures === 0 ? myJson.pictures.length - 1 : myJson - 1
+      myJsonPictures === 0 ? myJson.pictures.length - 1 : myJsonPictures - 1
     );
   };
   const next = () => {
