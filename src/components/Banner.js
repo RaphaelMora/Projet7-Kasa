@@ -31,7 +31,11 @@ const Banner = ({ home, about }) => {
                 srcset={bannerAboutDesktop}
                 media="(min-width:768px)"
               />
-              <img className="banner__img" src={bannerAbout} alt="mountain" />
+              <img
+                className="banner__img"
+                srcSet={bannerAbout}
+                alt="mountain"
+              />
             </picture>
           </div>
         </div>

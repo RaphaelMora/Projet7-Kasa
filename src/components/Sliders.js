@@ -6,7 +6,6 @@ const Sliders = () => {
   const [myJsonPictures, setMyJsonPictures] = useState(0);
 
   useEffect(() => {
-    /*Penser à changer la destination*/
     axios.get("./accommodations.json").then((res) => {
       setMyJson(
         res.data.find(

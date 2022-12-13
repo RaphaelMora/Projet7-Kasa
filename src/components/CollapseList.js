@@ -6,17 +6,26 @@ const CollapseList = ({ val }) => {
   return (
     <div className="collapse__map">
       <div className="collapse__content">
-        <p className="collapse__title">{val.title}</p>
+        <p key={val.id} className="collapse__title">
+          {val.title}
+        </p>
         {!state ? (
-          <i class="fa-solid fa-chevron-up" onClick={() => setState(true)}></i>
+          <i
+            className="fa-solid fa-chevron-up"
+            onClick={() => setState(true)}
+          ></i>
         ) : (
           <i
-            class="fa-solid fa-chevron-down"
+            className="fa-solid fa-chevron-down"
             onClick={() => setState(false)}
           ></i>
         )}
       </div>
-      {state && <p className="collapse__description">{val.description}</p>}
+      {state && (
+        <p key={val.id} className="collapse__description">
+          {val.description}
+        </p>
+      )}
     </div>
   );
 };

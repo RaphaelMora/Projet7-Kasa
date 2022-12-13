@@ -42,12 +42,12 @@ const AccommoCollapse = (a, b) => {
               <p className="collapse__title__Accommodation">Description</p>
               {!stateA ? (
                 <i
-                  class="fa-solid fa-chevron-up"
+                  className="fa-solid fa-chevron-up"
                   onClick={() => displayA(true)}
                 ></i>
               ) : (
                 <i
-                  class="fa-solid fa-chevron-down"
+                  className="fa-solid fa-chevron-down"
                   onClick={() => displayA(false)}
                 ></i>
               )}
@@ -64,12 +64,12 @@ const AccommoCollapse = (a, b) => {
               <p className="collapse__title__Accommodation">Équipements</p>
               {!stateB ? (
                 <i
-                  class="fa-solid fa-chevron-up"
+                  className="fa-solid fa-chevron-up"
                   onClick={() => displayB(true)}
                 ></i>
               ) : (
                 <i
-                  class="fa-solid fa-chevron-down"
+                  className="fa-solid fa-chevron-down"
                   onClick={() => displayB(false)}
                 ></i>
               )}
