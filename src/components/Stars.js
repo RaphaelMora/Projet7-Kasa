@@ -42,7 +42,6 @@ const Stars = () => {
         /**
          * Si index > (supérieur) à numberOfStar, on affiche des étoiles noir
          */
-
         if (index > numberOfStar - 1) {
           return <i key={index} className="fas fa-star fa-star-grey"></i>;
         }
