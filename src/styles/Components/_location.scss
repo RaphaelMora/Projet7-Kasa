@@ -1,0 +1,43 @@
+.location__Container {
+  width: 90%;
+  position: relative;
+  left: 5%;
+  bottom: 185px;
+  .location__p {
+    font-size: 0.875rem;
+    color: $color-primary;
+    font-weight: 500;
+  }
+}
+
+//Large smartphone
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .location__Container {
+    bottom: 340px;
+    left: 37px;
+  }
+}
+
+//Tablette
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .location__Container {
+    bottom: 240px;
+    left: 5%;
+    .location__p {
+      font-size: 0.938rem;
+    }
+  }
+}
+
+//Desktop
+@media screen and (min-width: 1024px) {
+  .location__Container {
+    bottom: 345px;
+    left: 5%;
+    .location__p {
+      font-size: 1.125rem;
+      color: $color-primary;
+      font-weight: 500;
+    }
+  }
+}

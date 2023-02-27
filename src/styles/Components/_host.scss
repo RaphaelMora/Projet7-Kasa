@@ -1,0 +1,95 @@
+.host__Container {
+  width: 10%;
+  margin-left: 70%;
+  .host {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 160px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .host__content__p {
+      position: relative;
+      right: 10px;
+      .host__p {
+        text-align: end;
+        font-size: 0.75rem;
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+//Large sartphone
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .host__Container {
+    width: 10%;
+    margin-left: 75%;
+    .host {
+      display: flex;
+      position: relative;
+      bottom: 390px;
+      img {
+        width: 80%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      .host__content__p {
+        right: 10px;
+        .host__p {
+          text-align: end;
+          font-size: 0.875rem;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+//Tablette
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .host__Container {
+    width: 10%;
+    margin-left: 83%;
+    .host {
+      display: flex;
+      align-items: center;
+      position: relative;
+      bottom: 320px;
+      img {
+        width: 50%;
+        border-radius: 50%;
+      }
+      .host__content__p {
+        .host__p {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}
+
+//Desktop
+@media screen and (min-width: 1024px) {
+  .host__Container {
+    width: 10%;
+    .host {
+      display: flex;
+      position: relative;
+      bottom: 450px;
+      left: 140%;
+      img {
+        width: 50%;
+        border-radius: 50%;
+      }
+      .host__content__p {
+        .host__p {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.tags__container {
+  width: 80%;
+  display: flex;
+  position: relative;
+  bottom: 245px;
+  gap: 10px;
+  margin-left: 15px;
+  .tags__content {
+    width: 84px;
+    height: 18px;
+    background-color: $color-primary;
+    border-radius: 5px;
+    .tags__content__p {
+      .tags__p {
+        position: relative;
+        bottom: 8px;
+        font-size: 0.625rem;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+}
+
+//Large smartphone
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .tags__container {
+    width: 50%;
+    bottom: 380px;
+    left: 2%;
+  }
+}
+
+//Tablette
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .tags__container {
+    display: flex;
+    position: relative;
+    bottom: 240px;
+    gap: 10px;
+    .tags__content {
+      width: 15%;
+      height: 25px;
+      border-radius: 10px;
+      .tags__content__p {
+        .tags__p {
+          bottom: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+//Desktop
+@media screen and (min-width: 1024px) {
+  .tags__container {
+    display: flex;
+    position: relative;
+    bottom: 420px;
+    left: 5%;
+    margin: 0;
+    .tags__content {
+      width: 115px;
+      height: 25px;
+      border-radius: 10px;
+      .tags__content__p {
+        .tags__p {
+          bottom: 10px;
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}

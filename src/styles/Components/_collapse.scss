@@ -1,0 +1,119 @@
+.collapse {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 70%;
+  .collapse_article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    .collapse_title_chevrons {
+      padding: 2%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $white;
+      height: 30px;
+      font-size: 13px;
+      background-color: $color-primary;
+      border-radius: 5px;
+      .chevrons {
+        cursor: pointer;
+      }
+    }
+    .collapse__content {
+      width: 100%;
+      padding: 3%;
+      background-color: $grey;
+      color: #ff6060;
+      font-size: 12px;
+      border-radius: 0 0 5px 5px;
+    }
+    .collapse__content_list {
+      background-color: $grey;
+      color: #ff6060;
+      font-size: 12px;
+    }
+  }
+}
+
+.collapse__Accommodation {
+  position: relative;
+  bottom: 200px;
+}
+
+.collapse__equipmentList {
+  width: 100%;
+  padding: 1%;
+}
+
+//Large smartphone
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .collapse {
+    margin-bottom: 52%;
+    .collapse__Accommodation {
+      position: relative;
+      bottom: 390px;
+    }
+  }
+}
+
+//talette
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .collapse {
+    margin-bottom: 5%;
+  }
+  .collapse__Accommodation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 280px;
+    .collapse__Accommodation_content {
+      width: 40%;
+    }
+  }
+}
+
+//desktop
+@media screen and (min-width: 1024px) {
+  .collapse_article {
+    margin: -5% auto;
+  }
+  .collapse__title,
+  .collapse_p,
+  .collapse__equipmentList,
+  .chevrons {
+    font-size: 18px;
+    line-height: 142.6%;
+  }
+  .collapse {
+    margin-top: -1%;
+    margin-bottom: 5%;
+    .collapse__Accommodation {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      bottom: 450px;
+      .collapse__Accommodation_content {
+        width: 45%;
+      }
+      .collapse_article {
+        .collapse_container {
+          .collapse__content {
+            height: 200px;
+          }
+          .collapse_title_chevrons {
+            height: 52px;
+          }
+        }
+      }
+    }
+  }
+}
